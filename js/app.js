@@ -286,23 +286,23 @@ console.log(people);
 // ]
 
 
-var data = [
-    'Sianna','Fantini','sfantini0@jalbum.net','Female','17.187.75.7',
-    'Ami','Siggin','asiggin1@auda.org.au','Female','92.136.232.25',
-    'Kandy','Bernardoni','kbernardoni2@infoseek.co.jp','Female','108.122.66.8',
-    'Gus','Oswal','goswal3@ucoz.ru','Female','101.216.78.8',
-    'Laurie','Upward','lupward4@issuu.com','Male','92.123.107.',
-    'Melitta','Vallery','mvallery5@nydailynews.com','Female','255.228.200.8',
-    'Francesco','Danielczyk','fdanielczyk6@yelp.com','Male','253.12.207.4',
-    'Tedmund','Misken','tmisken7@imgur.com','Male','216.241.133.',
-    'Koralle','Griffithe','kgriffithe8@simplemachines.org','Female','108.21.21.11',
-    'Major','Yewman','myewman9@prnewswire.com','Male','142.167.101.22',
-    'Dell','Hutcheon','dhutcheona@forbes.com','Male','97.208.109.17',
-    'Halley','Doward','hdowardb@redcross.org','Female','58.97.154.14',
-    'Kati','Yakushkev','kyakushkevc@washington.edu','Female','34.166.161.14',
-    'Sargent','Hulatt','shulattd@w3.org','Male','99.235.176.11',
-    'Aleta','Tenny','atennye@rediff.com','Female','224.48.225.77' 
-    ];
+// var data = [
+//     'Sianna','Fantini','sfantini0@jalbum.net','Female','17.187.75.7',
+//     'Ami','Siggin','asiggin1@auda.org.au','Female','92.136.232.25',
+//     'Kandy','Bernardoni','kbernardoni2@infoseek.co.jp','Female','108.122.66.8',
+//     'Gus','Oswal','goswal3@ucoz.ru','Female','101.216.78.8',
+//     'Laurie','Upward','lupward4@issuu.com','Male','92.123.107.',
+//     'Melitta','Vallery','mvallery5@nydailynews.com','Female','255.228.200.8',
+//     'Francesco','Danielczyk','fdanielczyk6@yelp.com','Male','253.12.207.4',
+//     'Tedmund','Misken','tmisken7@imgur.com','Male','216.241.133.',
+//     'Koralle','Griffithe','kgriffithe8@simplemachines.org','Female','108.21.21.11',
+//     'Major','Yewman','myewman9@prnewswire.com','Male','142.167.101.22',
+//     'Dell','Hutcheon','dhutcheona@forbes.com','Male','97.208.109.17',
+//     'Halley','Doward','hdowardb@redcross.org','Female','58.97.154.14',
+//     'Kati','Yakushkev','kyakushkevc@washington.edu','Female','34.166.161.14',
+//     'Sargent','Hulatt','shulattd@w3.org','Male','99.235.176.11',
+//     'Aleta','Tenny','atennye@rediff.com','Female','224.48.225.77' 
+//     ];
 
 
     // var people = [
@@ -361,23 +361,23 @@ var data = [
     // console.log(data[60],data[61],data[62],data[63],data[64]);
     // console.log(data[65],data[66],data[67],data[68],data[69]);
     // console.log(data[70],data[71],data[72],data[73],data[74]);
-    var client = [
+    // var client = [
 
-    ]
+    // ]
     
-    for (let i = 0; i < data.length; i++) {
-        data.push(
-            {
-                fname: data[i],
-                lname: data[i + 1],
-                email: data[i + 2],
-                gender: data[i + 3],
-                ipaddress: data[i + 4]
-            }
-        )
-        i += 3; 
-    }
-    console.log(data);
+    // for (let i = 0; i < data.length; i++) {
+    //     data.push(
+    //         {
+    //             fname: data[i],
+    //             lname: data[i + 1],
+    //             email: data[i + 2],
+    //             gender: data[i + 3],
+    //             ipaddress: data[i + 4]
+    //         }
+    //     )
+    //     i += 3; 
+    // }
+    // console.log(data);
 
 
 //theres a difference between obj2['fname'] && obj2[fname] <== targets a variable
@@ -385,31 +385,208 @@ var data = [
 // but obj2.fname will not work comes out undefined. it cannot transport variable through dot notation.
 
 
-console.log(obj2['fname']);
+// console.log(obj2['fname']);
+
 // Method - a function that is attached to something.
 
-var obj3 = {
-    arr: [1,2,3],
-    name: 'Michael Valencia',
-    sum: function (num1,num2) {
-        return num1 + num2;
-    },
-    bool: true,
-    num:42,
-    obj: {
-        num1:40,
-        num2:2
-    }
-};
+// var obj3 = {
+//     arr: [1,2,3],
+//     name: 'Michael Valencia',
+//     sum: function (num1,num2) {
+//         return num1 + num2;
+//     },
+//     bool: true,
+//     num:42,
+//     obj: {
+//         num1:40,
+//         num2:2
+//     }
+// };
 
 // console.log(obj3.arr[1]);
 // console.log(obj['arr'][1]);
 
-if (obj3.bool) {
-    console.log('Yo!');
+// if (obj3.bool) {
+//     console.log('Yo!');
+// }
+
+// var sum = obj3.sum;
+// var total = sum(obj3.obj.num1,obj3.obj.num2);
+// console.log(total);
+
+// Need to loop all the records 
+// for each 5 records add to object
+// push into new array
+
+// var peopleData = [];
+
+// for (let i = 0; i < data.length; i++) {
+//     peopleData.push({
+//         fname: data[i],
+//         lname: data[i + 1],
+//         email: data[i + 2],
+//         sex: data[i + 3],
+//         ip: data[i + 4]
+//     });
+//     i += 4;
+// }
+
+// console.log(peopleData);
+
+// var peopleData = [];
+
+// for (let i = 0; i < data.length; i += 5) {
+//     peopleData.push({
+//         fname: data[i],
+//         lname: data[i + 1],
+//         email: data[i + 2],
+//         sex: data[i + 3],
+//         ip: data[i + 4]
+//     });
+// }
+
+// console.log(peopleData);
+
+// var peopleData = [];
+
+// for (let i = 0; i < data.length; i++) {
+//     if (i % 5 == 0) {        
+//         peopleData.push({
+//             fname: data[i],
+//             lname: data[i + 1],
+//             email: data[i + 2],
+//             sex: data[i + 3],
+//             ip: data[i + 4]
+//         });
+//     }
+// }
+
+// console.log(peopleData);
+
+// var peopleData = [];
+// for (let i = 0; i < data.length; i++) {
+//     peopleData.push({
+//         fname: data[i],
+//         lname: data[i + 1],
+//         email: data[i + 2],
+//         sex: data[i + 3],
+//         ip: data[i + 4]
+//     });
+//     data = data.slice(4, data.length);
+// }
+// console.log(peopleData);
+
+// var peopleData = [];
+// var counter = 0;
+// var arrCounter = 0;
+// data.forEach(element => {
+//     let val = counter % 5;
+//     if (val == 0) {
+//         peopleData.push({ fname: element });
+//     } 
+//     else if (val == 1) {
+//         // peopleData.push({ lname: element });
+//         peopleData[arrCounter].lname = element;
+//     } 
+//     else if (val == 2) {
+//         peopleData[arrCounter].email = element;
+//     } else if (val == 3) {
+//         peopleData[arrCounter].sex = element;
+//     } else if (val == 4) {
+//         peopleData[arrCounter].ip = element;
+//     }
+
+//     counter++;
+//     if (counter % 5 == 0) {
+//         arrCounter++;
+//     } 
+// });
+// console.log(peopleData);
+
+// var peopleData = [];
+// var arrCounter = 0;
+// data.forEach(function (element, idx) {
+//     let val = idx % 5;
+//     if (val == 0) {
+//         peopleData.push({ fname: element });
+//     } 
+//     else if (val == 1) {
+//         peopleData[arrCounter].lname = element;
+//     } else if (val == 2) {
+//         peopleData[arrCounter].email = element;
+//     } else if (val == 3) {
+//         peopleData[arrCounter].sex = element;
+//     } else if (val == 4) {
+//         peopleData[arrCounter].ip = element;
+//     }
+
+//     if (idx != 0 && idx % 5 == 0) {
+//         arrCounter++;
+//     } 
+// });
+// console.log(peopleData);
+
+// var newData = ['Bryce','Mullican','42','Herbert','Brown','39','Javier','Peraza','35']
+
+// var arrPeople = [];
+// open loop
+// for (let i = 0; i < newData.length; i++) {
+    // ? i == 3
+    // i = i + 2;
+    // }
+    // close the loop
+    
+// arrPeople.push({
+//     fname: newData[i], // to change these numbers?
+//     lname: newData[i + 1],
+//     age: newData[i + 2]
+// });
+// arrPeople.push({
+//     fname: newData[3],
+//     lname: newData[4],
+//     age: newData[5]
+// });
+// arrPeople.push({
+//     fname: newData[6],
+//     lname: newData[7],
+//     age: newData[8]
+// });
+// console.log(arrPeople);
+
+
+var challengeData = [
+    'Sianna','Fantini','sfantini0@jalbum.net','Female','17.187.75.7',
+    'Ami','Siggin','Female','92.136.232.25',
+    'Kandy','Bernardoni','kbernardoni2@infoseek.co.jp','Female','108.122.66.8',
+    'Gus','Oswal','goswal3@ucoz.ru','Female','101.216.78.8',
+    'Laurie','Upward','lupward4@issuu.com','92.123.107.',
+    'Melitta','Vallery','mvallery5@nydailynews.com','Female','255.228.200.8',
+    'Francesco','Danielczyk','Male','253.12.207.4',
+    'Tedmund','Misken','216.241.133.',
+    'Koralle','Griffithe','kgriffithe8@simplemachines.org','108.21.21.11',
+    'Major','Yewman','myewman9@prnewswire.com','Male','142.167.101.22',
+    'Dell','Hutcheon','dhutcheona@forbes.com','Male','97.208.109.17',
+    'Halley','Doward','Female','58.97.154.14',
+    'Kati','Yakushkev','kyakushkevc@washington.edu','34.166.161.14',
+    'Sargent','Hulatt','shulattd@w3.org','Male',
+    'Aleta','Tenny','Female','224.48.225.77' 
+];
+
+var peopleData2 = [];
+
+    for (let i = 0; i < challengeData.length; i++) {
+        if (peopleData2.sex == 'Male' || peopleData2.sex == 'Female') {
+            peopleData2.push({ip: challengeData[i + 4]});
+        }
+    peopleData2.push({
+        fname: challengeData[i],
+        lname: challengeData[i + 1],
+        email: challengeData[i + 2],
+        sex: challengeData[i + 3],
+        ip: challengeData[i + 4]
+    });
+    i += 4;
+
 }
 
-var sum = obj3.sum;
-var total = sum(obj3.obj.num1,obj3.obj.num2);
-console.log(total);
-
+console.log(peopleData2);
