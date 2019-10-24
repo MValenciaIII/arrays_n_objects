@@ -590,3 +590,8 @@ var peopleData2 = [];
 }
 
 console.log(peopleData2);
+
+
+//regex
+
+
